@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mali:200,300i,400,400i,500,700,700i" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="audio_wrap">
+            <audio id='sound_intro' src="music/caroline.mp3" type="audio/mpeg" autoplay controls></audio>
+        </div>
+        <div id='blackout'>
+            <svg id="loader"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#loader_svg"></use></svg>
+        </div>
+        <section id='scene_1' class='fade'>
+            <div class="container">
+                <div class="bird-container bird-container--one">
+                    <div class="bird bird--one"></div>
+                </div>          
+                <div class="bird-container bird-container--two">
+                    <div class="bird bird--two"></div>
+                </div>
+                <div class="house">
+                <div class='bee_wrapper'>
+                    <div class="bee"></div>
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bee_path"></use></svg>
+                </div>
+                <div class="text">
+                    <p class='line'>Мм... какой милый домик.</p>
+                    <p class='line'>И какое огромное гнездо под ним! Любопытно, чье же оно.</p>
+                    <p class='line'>Идет дымок, значит там кто-то есть. Пойду-ка расспрошу хозяев о их чудных соседях снизу.</p>
+                    <p class='line'>Хм... но как же туда попасть?...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src='js/sprites.js'></script>
+    <script src='js/anime.min.js'></script>
+    <script src='js/main.js'></script>
+</body>
+</html>
