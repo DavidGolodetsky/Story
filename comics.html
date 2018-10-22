@@ -14,6 +14,7 @@
             <audio id='sound_intro' src="music/caroline.mp3" type="audio/mpeg" autoplay controls></audio>
         </div>
         <div id='blackout'>
+            <h1>In the fall</h1>
             <svg id="loader"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#loader_svg"></use></svg>
         </div>
         <section id='scene_1' class='fade'>
@@ -37,9 +38,35 @@
                 </div>
             </div>
         </section>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="squiggly-0">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+                </filter>
+                <filter id="squiggly-1">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+                </filter>
+                
+                <filter id="squiggly-2">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+                </filter>
+                <filter id="squiggly-3">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+                </filter>
+                
+                <filter id="squiggly-4">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+        </defs> 
+    </svg>
     </main>
     <script src='js/sprites.js'></script>
-    <script src='js/anime.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js'></script>
     <script src='js/main.js'></script>
 </body>
 </html>
